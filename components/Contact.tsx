@@ -249,7 +249,7 @@ export default function Contact() {
             </div>
           </div>
 
-          <div>
+          <div id="reservation_form">
             <form onSubmit={handleSubmit} className="bg-gradient-to-br from-rose-50 to-pink-50 rounded-2xl p-8 space-y-6">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">فرم رزرو نوبت</h3>
 

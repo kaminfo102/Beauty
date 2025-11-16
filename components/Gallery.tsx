@@ -85,7 +85,7 @@ export default function Gallery() {
           <h3 className="text-3xl md:text-4xl font-bold mb-4">آماده تغییر هستید؟</h3>
           <p className="text-xl mb-8 opacity-90">اولین قدم را با ما بردارید و زیبایی طبیعی خود را کشف کنید</p>
           <button
-            onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+            onClick={() => document.getElementById('reservation_form')?.scrollIntoView({ behavior: 'smooth' })}
             className="bg-white text-rose-600 px-8 py-4 rounded-full font-bold hover:bg-gray-50 hover:scale-105 transition-all duration-300 inline-block"
           >
             دریافت مشاوره رایگان

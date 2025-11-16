@@ -86,7 +86,9 @@ export default function Services() {
                   ))}
                 </div>
 
-                <button className="w-full mt-4 bg-gradient-to-l from-rose-600 to-pink-600 text-white py-3 rounded-xl font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300">
+                <button
+                onClick={() => document.getElementById('reservation_form')?.scrollIntoView({ behavior: 'smooth' })}
+                className="w-full mt-4 bg-gradient-to-l from-rose-600 to-pink-600 text-white py-3 rounded-xl font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300">
                   رزرو نوبت
                 </button>
               </div>
