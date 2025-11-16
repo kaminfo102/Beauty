@@ -2,16 +2,16 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'کلینیک زیبایی رز',
-  description: 'کلینیک زیبایی رز با بیش از ۱۵ سال تجربه - خدمات لیزر موهای زائد، مشاور تغذیه، دستگاه لاغری و تزریقات زیبایی',
+  title: 'کلینیک زیبایی نیولایف',
+  description: 'کلینیک زیبایی نیولایف در دیواندره از آبان سال 1402  در زمینه زیبایی ،شروع به فعالیت کرده است.که کارهای مختلف از جمله فیلر وبوتاکس و مزو و PRP ولیفت نخ ، لیزر و هایفوولاغری و مامایی فعالیت دارد.',
   openGraph: {
-    title: 'کلینیک زیبایی رز',
-    description: 'کلینیک زیبایی رز با بیش از ۱۵ سال تجربه',
-    images: ['https://bolt.new/static/og_default.png'],
+    title: 'کلینیک زیبایی نیولایف',
+    description: 'کلینیک زیبایی نیولایف در دیواندره از آبان سال 1402  در زمینه زیبایی ،شروع به فعالیت کرده است.که کارهای مختلف از جمله فیلر وبوتاکس و مزو و PRP ولیفت نخ ، لیزر و هایفوولاغری و مامایی فعالیت دارد.',
+    images: ['/images/logo_2_1.png'],
   },
   twitter: {
     card: 'summary_large_image',
-    images: ['https://bolt.new/static/og_default.png'],
+    images: ['/images/logo_2_1.png'],
   },
 };
 
