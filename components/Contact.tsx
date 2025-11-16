@@ -2,6 +2,7 @@
 
 import { Phone, MapPin, Clock, Mail, Instagram, Send } from 'lucide-react';
 import { useState } from 'react';
+import { info } from '@/lib/info';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -40,8 +41,8 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-bold text-gray-900 mb-1">تلفن</h4>
-                  <a href="tel:09185227306" className="text-gray-600 hover:text-rose-600 transition-colors" dir="ltr">
-                    09185227306
+                  <a href={info.phone} className="text-gray-600 hover:text-rose-600 transition-colors" dir="ltr">
+                    {info.phone}
                   </a>
                 </div>
               </div>
@@ -53,7 +54,8 @@ export default function Contact() {
                 <div>
                   <h4 className="font-bold text-gray-900 mb-1">آدرس</h4>
                   <p className="text-gray-600">
-                  کردستان شهرستان دیواندره شهرک اندیشه ، روبه روی ساختمان نظام مهندسی ، بالاتر از کمیته امداد ساختمان پزشکان کارن طبقه سوم                  </p>
+                    {info.address}
+                  </p>
                 </div>
               </div>
 
@@ -74,8 +76,8 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-bold text-gray-900 mb-1">ایمیل</h4>
-                  <a href="mailto:info@clinicrose.ir" className="text-gray-600 hover:text-rose-600 transition-colors" dir="ltr">
-                    info@newlifeclinic.ir
+                  <a href={`mailto:${info.email}`} className="text-gray-600 hover:text-rose-600 transition-colors" dir="ltr">
+                        {info.email}
                   </a>
                 </div>
               </div>
@@ -86,8 +88,8 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-bold text-gray-900 mb-1">اینستاگرام</h4>
-                  <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-rose-600 transition-colors" dir="ltr">
-                    @cnewlife_clinic1
+                  <a href={info.instagram} target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-rose-600 transition-colors" dir="ltr">
+                    {info.instagram}
                   </a>
                 </div>
               </div>

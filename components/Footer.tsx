@@ -1,24 +1,25 @@
 'use client';
 
 import { Heart, Instagram, Phone, Mail } from 'lucide-react';
+import { info } from '@/lib/info';
 
 export default function Footer() {
   const currentYear = new Date().toLocaleDateString('fa-IR', { year: 'numeric' });
 
   return (
-    <footer className="bg-gradient-to-br from-gray-900 to-gray-800 text-white">
+    <footer className="bg-gradient-to-br from-gray-900 to-gray-800 text-white pb-24 md:pb-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid md:grid-cols-4 gap-8">
           <div className="space-y-4">
             <h3 className="text-2xl font-bold bg-gradient-to-l from-rose-400 to-pink-400 bg-clip-text text-transparent">
-                کلینیک زیبایی نیولایف
+                {info.name}
             </h3>
             <p className="text-gray-400 leading-relaxed">
-              با بیش از ۱۵ سال تجربه، همراه شما در مسیر زیبایی و سلامتیف
+               همراه شما در مسیر زیبایی و سلامتی
             </p>
             <div className="flex gap-3">
               <a
-                href="https://instagram.com"
+                href={info.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-white/10 hover:bg-rose-600 rounded-lg flex items-center justify-center transition-colors"
@@ -26,13 +27,13 @@ export default function Footer() {
                 <Instagram size={20} />
               </a>
               <a
-                href="tel:09185227306"
+                href={info.phone}
                 className="w-10 h-10 bg-white/10 hover:bg-rose-600 rounded-lg flex items-center justify-center transition-colors"
               >
                 <Phone size={20} />
               </a>
               <a
-                href="mailto:info@newlifeclinic.ir"
+                href={info.email}
                 className="w-10 h-10 bg-white/10 hover:bg-rose-600 rounded-lg flex items-center justify-center transition-colors"
               >
                 <Mail size={20} />
@@ -65,14 +66,14 @@ export default function Footer() {
             <ul className="space-y-3 text-gray-400">
               <li className="flex items-start gap-2">
                 <Phone size={18} className="mt-1 flex-shrink-0" />
-                <a href="tel:09185227306" className="hover:text-rose-400 transition-colors" dir="ltr">
-                  09185227306
+                <a href={info.phone} className="hover:text-rose-400 transition-colors" dir="ltr">
+                  {info.phone}
                 </a>
               </li>
               <li className="flex items-start gap-2">
                 <Mail size={18} className="mt-1 flex-shrink-0" />
-                <a href="mailto:info@newlifeclinic.ir" className="hover:text-rose-400 transition-colors" dir="ltr">
-                  info@newlifeclinic.ir
+                <a href={info.email} className="hover:text-rose-400 transition-colors" dir="ltr">
+                  {info.email}
                 </a>
               </li>
             </ul>

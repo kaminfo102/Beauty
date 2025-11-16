@@ -3,6 +3,7 @@
 import { Menu, Phone, X, Home, Sparkles, Users, Images, MessageCircle } from 'lucide-react';
 import { useState } from 'react';
 import Image from 'next/image';
+import { info } from '@/lib/info';
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -47,7 +48,7 @@ export default function Navbar() {
             <div className="relative transform hover:scale-105 transition-transform duration-300">
               <div className="w-36 h-36 relative">
                 <Image
-                  src="/images/logo_2.png"
+                  src="/images/logo_2_1.png"
                   alt="کلینیک زیبایی نیولایت"
                   fill
                   className="object-contain"
@@ -82,11 +83,11 @@ export default function Navbar() {
               </button>
             ))}
             <a
-              href="tel:09185227306"
+              href={`tel:${info.phone}`}
               className="flex items-center gap-2 text-rose-600 hover:text-rose-700 transition-colors font-medium text-sm"
             >
               <Phone size={18} />
-              <span>09185227306</span>
+              <span>{info.phone}</span>
             </a>
           </div>
         </div>
@@ -96,20 +97,20 @@ export default function Navbar() {
           {/* Mobile Phone - Left */}
           <div className="flex items-center gap-2 flex-1">
             <a
-              href="tel:09185227306"
+              href={`tel:${info.phone}`}
               className="flex items-center gap-2 text-rose-600 hover:text-rose-700 transition-colors font-medium text-xs sm:text-sm"
             >
               <Phone size={16} />
-              <span className="hidden sm:inline">09185227306</span>
+              <span className="hidden sm:inline">{info.phone}</span>
             </a>
           </div>
 
           {/* Mobile Logo - Center with same style as desktop */}
           <div className="flex-shrink-0 relative z-50" style={{ marginTop: '50px' }}>
             <div className="relative transform hover:scale-105 transition-transform duration-300">
-              <div className="w-20 h-20 sm:w-24 sm:h-24 relative">
+              <div className="w-28 h-28 sm:w-24 sm:h-24 relative">
                 <Image
-                  src="/images/logo_2.png"
+                  src="/images/logo_2_1.png"
                   alt="کلینیک زیبایی نیولایف"
                   fill
                   className="object-contain"
@@ -227,13 +228,13 @@ export default function Navbar() {
               {/* Menu Footer */}
               <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-white to-transparent border-t border-rose-100">
                 <a
-                  href="tel:09185227306"
+                  href={`tel:${info.phone}`}
                   className="flex items-center justify-center gap-3 w-full p-4 rounded-2xl bg-gradient-to-l from-rose-600 to-pink-600 text-white font-semibold shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300"
                 >
                   <div className="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center">
                     <Phone size={20} />
                   </div>
-                  <span>تماس با ما: 09185227306</span>
+                  <span>تماس با ما: {info.phone}</span>
                 </a>
               </div>
             </div>

@@ -51,10 +51,10 @@ export default function Hero() {
             </div>
 
             <div className="grid grid-cols-3 gap-6 pt-8">
-              <div className="text-center">
+              {/* <div className="text-center">
                 <div className="text-4xl font-bold text-rose-600">۱۵+</div>
                 <div className="text-gray-600 text-sm mt-1">سال تجربه</div>
-              </div>
+              </div> */}
               <div className="text-center border-x border-gray-200">
                 <div className="text-4xl font-bold text-rose-600">۵۰۰۰+</div>
                 <div className="text-gray-600 text-sm mt-1">مشتری راضی</div>
