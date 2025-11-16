@@ -48,7 +48,7 @@ export default function Navbar() {
             <div className="relative transform hover:scale-105 transition-transform duration-300">
               <div className="w-36 h-36 relative">
                 <Image
-                  src="/images/logo_2_1.png"
+                  src="/images/logo_2_1_f.png"
                   alt="کلینیک زیبایی نیولایت"
                   fill
                   className="object-contain"
@@ -101,7 +101,8 @@ export default function Navbar() {
               className="flex items-center gap-2 text-rose-600 hover:text-rose-700 transition-colors font-medium text-xs sm:text-sm"
             >
               <Phone size={16} />
-              <span className="hidden sm:inline">{info.phone}</span>
+              <span className="sm:inline">{info.phone}</span>
+              
             </a>
           </div>
 
@@ -110,7 +111,7 @@ export default function Navbar() {
             <div className="relative transform hover:scale-105 transition-transform duration-300">
               <div className="w-28 h-28 sm:w-24 sm:h-24 relative">
                 <Image
-                  src="/images/logo_2_1.png"
+                  src="/images/logo_2_1_f.png"
                   alt="کلینیک زیبایی نیولایف"
                   fill
                   className="object-contain"
